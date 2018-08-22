@@ -7,12 +7,8 @@ let foods = {
   grapes: 35,
   strawberries: 27
 };
-
 // change code below this line
- 
- 
  ['oranges','plums','strawberries'].forEach(e => delete foods[e]);
-
 // change code above this line
 
 console.log(foods);
