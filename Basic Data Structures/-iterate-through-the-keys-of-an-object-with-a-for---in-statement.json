@@ -1,1 +1,31 @@
-{"index.js":"let users = {\n  Alan: {\n    age: 27,\n    online: false\n  },\n  Jeff: {\n    age: 32,\n    online: true\n  },\n  Sarah: {\n    age: 48,\n    online: false\n  },\n  Ryan: {\n    age: 19,\n    online: true\n  }\n};\n\nfunction countOnline(obj) {\n  // change code below this line\n  let count=0;\n  for ( let user in users) {\n    if (users[user][\"online\"]==true) {count+=1;}\n  }\n  return count;\n  // change code above this line\n}\n\nconsole.log(countOnline(users));"}
+```js
+let users = {
+  Alan: {
+    age: 27,
+    online: false
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: false
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+
+function countOnline(obj) {
+  // change code below this line
+ let count=0;
+for (let a in users) {
+  if (users[a]["online"]==true) {count++; }
+}
+return count;
+  // change code above this line
+}
+
+console.log(countOnline(users));
