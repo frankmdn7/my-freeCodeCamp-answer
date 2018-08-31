@@ -1,4 +1,3 @@
-//Basic data structure: Check if an Object has a Property
 let users = {
   Alan: {
     age: 27,
@@ -20,7 +19,7 @@ let users = {
 
 function isEveryoneHere(obj) {
   // change code below this line
-  if (users.hasOwnProperty('Alan') && users.hasOwnProperty('Jeff') && users.hasOwnProperty('Sarah') && users.hasOwnProperty('Ryan')) return true;
+  if (('Alan' in users) && ('Jeff' in users)  && ('Sarah' in users) && ('Ryan' in users) ) return true;
   else return false;
   // change code above this line
 }
