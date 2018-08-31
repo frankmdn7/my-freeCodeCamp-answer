@@ -1,11 +1,8 @@
 function largestOfFour(arr) {
   let ans=[];
   for (let i=0; i<arr.length; i++){
-    let highest=arr[i][0];
-    for (let j=1; j<arr[i].length; j++){
-      if (highest<arr[i][j]) { highest= arr[i][j];}
-    }
-    ans.push(highest);
+        //ans.push(Math.max(...arr[i]));
+        ans[i]=Math.max(...arr[i]);
   }
   return ans;
 }
