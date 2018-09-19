@@ -116,7 +116,14 @@ var watchList = [
 
 var averageRating;
 //let shortlist= watchList.filter(x=>x.Director==="Christopher Nolan");
-let sum1=watchList.filter(x=>x.Director==="Christopher Nolan").reduce((x,y)=> x+ Number(y.imdbRating),0);
-averageRating=sum1/watchList.filter(x=>x.Director==="Christopher Nolan").length;
+let sum=0;
+let count=0;
+averageRating=watchList.reduce(function(x,y){
+  if (y.Director==="Christopher Nolan") {
+    sum+=Number(y.imdbRating);
+    count+=1;
+  }
+  return sum;},0)/count;
+  
 // Add your code above this line
 console.log(averageRating); 
